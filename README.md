@@ -244,7 +244,7 @@ It should be noted that execution model is the same for variables in which the c
         10. evaluateProgram [] !![]
         11. Return environment, input -> returns ([[("ten", var,IntegerLiteral 10)]], input)
 
-TLDR: 
+### TLDR: 
         evaluateProgram
                         -> 
                             evaluateStatementSequence
@@ -260,12 +260,13 @@ TLDR:
                         <-
         evaluateProgram                                          
 
-Additional Features
+## Additional Features
 
-Syntactic Sugar
-        '::' getStreamElement with choice of (int) for index of stream or singular element inside an array or (int,int) to specify which stream and index for that stream
+### Syntactic Sugar
+'::' getStreamElement with choice of (int) for index of stream or singular element inside an array or (int,int) to specify which stream and index for that stream
 
 Example
+
         sequence = [[]];
         seq = sequences.getStreamElement(0); !! Returns the first index stream
 
@@ -274,11 +275,13 @@ Example
         '[[]]' Shorthand for input streams. The user can create a stream by adding a . to end of this Shorthand
 
 '+' can also work to concatenate two arrays
+
         [10,9,8,7,6] + [5] = [10,9,8,7,6,5]
 
 Example
+
         sequences = inputStreams;
-...
+        ...
         sequences = [[]]; 
 
 ':'shorthand for .getStream similar to getStream index. allows the user to specify index of specific stream
@@ -291,4 +294,5 @@ inputStreams also automatically maps all inputs in the stream to IntegerLiteral 
 
 Error Messages
 Error messages are displayed to the user by the function that failed to easily details where it failed in the computation. Each error message is of the form (function Name: message: expression (if applicable index))
+        
         "getSingularStream: Could not get the element in list: " ++ show e ++ show i"
