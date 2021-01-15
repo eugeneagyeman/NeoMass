@@ -1,0 +1,9 @@
+sequences = [[]];
+int acc = sequences::(0,0);
+int count = 0;
+print acc;
+while (count < 10) {
+    acc = acc + sequences::(0,count+1);
+    print acc;
+    count++;
+};

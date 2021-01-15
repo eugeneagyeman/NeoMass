@@ -1,0 +1,19 @@
+int sequences = [[]];
+var aSeq = sequences::(0);
+    bSeq = sequences::(1);
+    cSeq = sequences::(2);
+
+var aCount = 0;
+    bCount = 0;
+    cCount = 0;
+
+while (sequences.length > 0) {
+    print cSeq::(cCount);
+    print bSeq::(bCount);
+    print aSeq::(aCount);
+
+    print aSeq::(aCount) + bSeq::(bCount);
+    print bSeq::(bCount) + cSeq::(cCount);
+
+    aCount++; bCount++; cCount++;
+};

@@ -1,0 +1,16 @@
+sequences = [[]];
+
+aSeq = sequences::(0);
+bSeq = sequences::(1);
+
+int aCount = 0;
+int bCount = 0;
+
+while(bSeq.length >= 2) {
+    print aSeq::(aCount);
+    print aSeq::(aCount + 1);
+    print bSeq::(bCount);
+
+    aCount = aCount + 2;
+    bCount = bCount + 1;
+};

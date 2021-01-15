@@ -1,0 +1,10 @@
+sequences = [[]];
+aSeq = sequences::(0);
+
+count = 2;
+while(!(aSeq.isEmpty)) {
+    print aSeq::(count);
+    print 2 * aSeq::(count-1);
+    print 3 * aSeq::(count-2) - 1;
+    count = count + 3;
+};
