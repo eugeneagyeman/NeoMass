@@ -1,5 +1,5 @@
 # NeoMass
-Custom Domain Language with interpreter written in Haskell
+Domain Specific Language with interpreter written in Haskell
 
 NeoMass is a high level, dynamically typed programming languages featuring a small syntax set and support for lists. Closely modelled on JavaScript due to its ease of use and knowledge, NMS aims to remove redundant syntax and constraints such as different tokens for conditionals (not, negate , concatenate and add) and merges them into one, leaving the interpreter to infer intention. As a result it is quite flexible and source text is small for most use cases specified in the domain specification. While the language is suitable to solve the problems defined in the specifications, there still remains work to be done to implement type checking (for consistency), better error handling and edge cases.
 
